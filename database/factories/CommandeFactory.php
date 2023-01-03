@@ -17,7 +17,7 @@ class CommandeFactory extends Factory
     public function definition()
     {
         return [
-            'id_client' => $this->faker->numberBetween(1, 250),
+            'id_client' => $this->faker->numberBetween(1, 50),
 			'id_produit' => $this->faker->numberBetween(1, 50),
 			'quantite' => $this->faker->numberBetween(1, 5),
 			'date' => "2020-12-15",
