@@ -40,3 +40,5 @@ Evolution 3 :
 J'ai ajouté une vue "produits.blade.php" et une route "/produits" pour accéder à cette vue.
 
 ![](https://i.ibb.co/FmNJpdW/evo3-1.png)
+
+Puis j'ai décidé d'utiliser TailWind pour créer facilement des cards où seront contenus les produits et leurs informations.
