@@ -37,18 +37,9 @@ class ProduitsController extends Controller
     }
     function deviseAll($devise)
     {
-        $produit = Produit::all();
-        switch ($devise) {
-            case "EUR":
-                break;
-            case "USD":
-                $produit->prix *= 1.08;
-                break;
-            case "BTC":
-                $produit->prix *= 0.000052;
-                break;
-            default:
-                return redirect("/");
+        $p = Produit::all();
+        if($devise == "EUR"){
+            $p->prix *= 2;
         }
         return response()->json(Produit::all());
     }

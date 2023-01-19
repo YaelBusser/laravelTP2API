@@ -9,9 +9,9 @@
 <body>
 <div id="app">
     <select v-model="devise">
-        <option value="USD">USD</option>
         <option value="EUR">EUR</option>
-        <option value="GBP">GBP</option>
+        <option value="USD">USD</option>
+        <option value="BTC">BTC</option>
     </select>
     <ul>
         <div style="display: grid; grid-template-columns: repeat(3, 1fr);">
@@ -24,8 +24,9 @@
                             <h2 class="font-bold mb-2 text-2xl text-purple-800">@{{item.nom}}
                             </h2>
                             <p class="text-purple-700 mb-2">@{{item.description}}</p>
-                            <a href="#" class="text-purple-600 hover:text-purple-500 text-sm">@{{item.prix}}
-                                @{{devise}}</a>
+                            <p href="#" class="text-purple-600 hover:text-purple-500 text-sm">
+                                @{{deviseConvert(item.prix, devise )}} @{{ devise }}
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -35,33 +36,30 @@
 </div>
 <script>
     const {createApp} = Vue
-
     createApp({
         data() {
             return {
                 items: [],
-                devise: ["USD", "EUR", "BTC"],
+                devise: 'EUR',
             }
         },
-        computed: {
-            formattedPrice() {
-                fetch('http://127.0.0.1:8000/api/produits/' + this.devise)
-                    .then(response => response.json())
-                    .then(data => {
-                        this.items.prix = data;
-                    })
-            }
-        },
-        watch: {
-            devise: function () {
-                this.fetchData();
-            }
+        mounted() {
+            this.fetchData();
         },
         methods: {
             fetchData() {
                 fetch('http://127.0.0.1:8000/api/produits')
                     .then(response => response.json())
                     .then(data => this.items = data)
+            },
+            deviseConvert(prix, devise) {
+                if (devise == "USD") {
+                    return prix * 1.08;
+                } else if (devise == "BTC") {
+                    return prix * 0.000052;
+                } else {
+                    return prix;
+                }
             }
         }
     }).mount('#app')

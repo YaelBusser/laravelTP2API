@@ -25,7 +25,7 @@ Route::get('/produits/{id}', [ProduitsController::class, "detail"]);
 Route::post('/produits', [ProduitsController::class, "ajouter"]);
 Route::get('/produits/{id}/{devise}', [ProduitsController::class, "devise"]);
 
-Route::get('/produits/devise/{dev}', [ProduitsController::class, "deviseAll"]);
+Route::get('/produits/devise/{devise}', [ProduitsController::class, "deviseAll"]);
 
 Route::get('/clients', [ClientsController::class, "liste"]);
 
