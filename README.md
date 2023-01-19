@@ -47,4 +47,4 @@ J'ai donc utilisé VueJs pour afficher les produits de l'API.
 
 En VueJs, j'ai décidé d'afficher la devise des produits en laissant le choix à l'utilisateur entre "EUR", "USD" et "BTC". J'ai ainsi créé une autre méthode qui contient en paramètre le prix et la devise en faisant des conditions qui permettent de retourner le prix modifié en fonction de la devise (en se basant de base sur la devise "EUR"). Je n'avais plus qu'à afficher le prix dans mon app montée avec la méthode.
 
-![](https://i.ibb.co/syrWYWg/evo3-2.png) ![](https://i.ibb.co/WfywCPB/evo3-3.png) ![](https://i.ibb.co/n1SNgXR/evo3-4.png)
+![](https://i.ibb.co/syrWYWg/evo3-2.png) ![](https://i.ibb.co/WfywCPB/evo3-3.png) ![](https://i.ibb.co/n1SNgXR/evo3-4.png) ![](https://i.ibb.co/37qyHL6/evo3-5.png) ![](https://i.ibb.co/dKN10Xz/evo3-6.png) ![](https://i.ibb.co/6HpY7Zg/evo3-7.png)
