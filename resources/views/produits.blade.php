@@ -24,7 +24,7 @@
                             <h2 class="font-bold mb-2 text-2xl text-purple-800">@{{item.nom}}
                             </h2>
                             <p class="text-purple-700 mb-2">@{{item.description}}</p>
-                            <p href="#" class="text-purple-600 hover:text-purple-500 text-sm">
+                            <p class="text-purple-600 hover:text-purple-500 text-sm">
                                 @{{deviseConvert(item.prix, devise )}} @{{ devise }}
                             </p>
                         </div>
