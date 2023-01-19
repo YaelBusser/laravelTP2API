@@ -42,4 +42,7 @@ J'ai ajouté une vue "produits.blade.php" et une route "/produits" pour accéder
 ![](https://i.ibb.co/FmNJpdW/evo3-1.png)
 
 Puis j'ai décidé d'utiliser TailWind pour créer facilement des cards où seront contenus les produits et leurs informations.
-Enfin, j'ai utilisé VueJS 3 afin de générer tous les produits depuis l'API mais j'aurai pu également utiliser Ajax.
+
+J'ai donc utilisé VueJs pour afficher les produits de l'API.
+
+En VueJs, j'ai décidé d'afficher la devise des produits en laissant le choix à l'utilisateur entre "EUR", "USD" et "BTC". J'ai ainsi créé une autre méthode qui contient en paramètre le prix et la devise en faisant des conditions qui permettent de retourner le prix modifié en fonction de la devise (en se basant de base sur la devise "EUR"). Je n'avais plus qu'à afficher le prix dans mon app montée avec la méthode.
