@@ -36,3 +36,7 @@ Remarque : La devise "EUR" ne modifie pas le prix du produit en supposant que la
 
 Evolution 3 :
 -------------
+
+J'ai ajouté une vue "produits.blade.php" et une route "/produits" pour accéder à cette vue.
+
+![](https://i.ibb.co/FmNJpdW/evo3-1.png)
