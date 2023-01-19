@@ -42,3 +42,4 @@ J'ai ajouté une vue "produits.blade.php" et une route "/produits" pour accéder
 ![](https://i.ibb.co/FmNJpdW/evo3-1.png)
 
 Puis j'ai décidé d'utiliser TailWind pour créer facilement des cards où seront contenus les produits et leurs informations.
+Enfin, j'ai utilisé VueJS 3 afin de générer tous les produits depuis l'API mais j'aurai pu également utiliser Ajax.
