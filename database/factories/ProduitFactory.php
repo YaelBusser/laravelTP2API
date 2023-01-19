@@ -19,7 +19,7 @@ class ProduitFactory extends Factory
         return [
             "nom" => $this->faker->name,
 			"description" => $this->faker->text,
-			"lien_image" => "http://lorempixel.com/640/480/",
+			"lien_image" => "https://picsum.photos/1053/700",
 			"prix" => $this->faker->numberBetween(1, 1000),
 			"tva" => 0.20,
         ];
