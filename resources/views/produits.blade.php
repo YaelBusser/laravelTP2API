@@ -27,6 +27,7 @@
                             <p class="text-purple-600 hover:text-purple-500 text-sm">
                                 @{{deviseConvert(item.prix, devise )}} @{{ devise }}
                             </p>
+                            <p class="text-purple-600 hover:text-purple-500 text-sm">TVA : @{{ item.tva*100 }}%</p>
                         </div>
                     </div>
                 </div>
