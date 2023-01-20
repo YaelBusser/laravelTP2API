@@ -25,7 +25,8 @@
                             </h2>
                             <p class="text-purple-700 mb-2">@{{item.description}}</p>
                             <p class="text-purple-600 hover:text-purple-500 text-sm">
-                                @{{deviseConvert(item.prix, devise )}} @{{ devise }}
+                                @{{deviseConvert(item.prix, devise )}} <span v-if="devise == 'EUR' ">€</span> <span
+                                    v-if="devise == 'USD' ">$</span><span v-if="devise == 'BTC' ">₿</span>
                             </p>
                             <p class="text-purple-600 hover:text-purple-500 text-sm">TVA : @{{ item.tva*100 }}%</p>
                         </div>
